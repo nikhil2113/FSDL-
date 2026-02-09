@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-box">
+
+        <!-- Left Side Banner -->
+        <div class="left-box">
+            <h1>Welcome Student 🎓</h1>
+            <p>
+                Register now to access your dashboard, courses and academic resources.
+            </p>
+
+            <img id="myImage"
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="right-box">
+
+            <h2 id="mainHeading">Student Registration</h2>
+
+            <form id="regForm">
+
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" id="email" placeholder="Email Address">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+
+                <button type="button" id="submitBtn" onclick="validateForm()">
+                    Register Now
+                </button>
+
+                <p id="result"></p>
+            </form>
+
+            <!-- DOM Buttons -->
+            <div class="dom-buttons">
+                <button onclick="changeText()">Change Heading</button>
+                <button onclick="changeImage()">Change Image</button>
+                <button onclick="addNode()">Add Node</button>
+                <button onclick="deleteNode()">Delete Node</button>
+            </div>
+
+            <div id="nodeArea"></div>
+
+            <!-- jQuery Button -->
+            <button id="jqBtn">jQuery Button</button>
+            <button id="getDataBtn">Get Form Data</button>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card Layout */
+.main-box {
+    width: 900px;
+    height: 520px;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Left Banner */
+.left-box {
+    width: 45%;
+    background: linear-gradient(to bottom, #43cea2, #185a9d);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-box h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.left-box p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.left-box img {
+    width: 200px;
+    margin-top: 30px;
+    animation: float 2s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Right Form Section */
+.right-box {
+    width: 55%;
+    background: white;
+    padding: 40px;
+}
+
+.right-box h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input Styling */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px 0;
+    transition: 0.3s;
+}
+
+.input-box:hover {
+    background: #e0e0ff;
+}
+
+.input-box i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #667eea;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+/* Register Button */
+#submitBtn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Result */
+#result {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* DOM Buttons */
+.dom-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dom-buttons button {
+    width: 48%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+.dom-buttons button:hover {
+    background: #764ba2;
+}
+
+/* jQuery Buttons */
+#jqBtn, #getDataBtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #43cea2;
+    color: white;
+    cursor: pointer;
+}
+
+#jqBtn:hover, #getDataBtn:hover {
+    background: #185a9d;
+}
